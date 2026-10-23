@@ -1,0 +1,32 @@
+Glide 1.0.0
+===========
+
+Smooth, touchpad-like scrolling for Windows 11 using a regular mouse wheel.
+
+Run Glide.exe. Close the settings window to keep it in the tray.
+Ctrl + Alt + S pauses/resumes. Right-click the tray icon to open settings,
+view input diagnostics, or quit.
+
+Glide duration and scroll speed are adjustable. Full-screen apps and games
+keep ordinary wheel input by default; Discord and File Explorer are exempt.
+Add windowed games and other exceptions by executable name.
+
+The native backend needs a recent Windows 11 x64 build with touchpad
+injection APIs and .NET Framework 4.8 or later. Input diagnostics should show:
+  Native two-finger touchpad gestures
+
+Unsupported systems use a wheel fallback with different visual behaviour.
+Apps running at a higher privilege level retain normal wheel scrolling.
+
+"Start with Windows" is optional. Keep the executable at its current
+location if startup is enabled; turn startup off before moving it.
+
+Preferences: %LOCALAPPDATA%\GlideScroll\settings.xml
+No driver, service, account, network features, analytics, or keyboard log.
+Unsigned portable build. Verify downloads with the release SHA256SUMS.txt.
+
+Source, build instructions, and support:
+https://github.com/qemvix/Glide
+
+This first public release preserves the confirmed native engine, whose
+diagnostic header currently identifies itself as Glide 2.0.

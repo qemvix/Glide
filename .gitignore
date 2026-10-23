@@ -1,0 +1,17 @@
+# Local builds and release staging
+/bin/
+/dist/
+/artifacts/
+**/obj/
+**/bin/
+
+# IDE and user-specific files
+.vs/
+.vscode/
+*.user
+*.suo
+*.pdb
+*.log
+*.tmp
+Thumbs.db
+Desktop.ini
